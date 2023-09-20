@@ -1,0 +1,8 @@
+hostname={{ ansible_hostname }}
+FQDN={{ ansible_fqdn }}
+ARCHITECHTURE={{ ansible_architecture }}
+CPU={{ ansible_processor_count }}
+FREE MEMORY={{ ansible_memfree_mb }}MB
+ANSIBLE DISTRIBUTION & VERSION={{ ansible_distribution }} and {{ ansible_distribution_version }}
+PRIMARY DISK={{ ansible_devices['sda']['size'] }}
+THIRD DISK={{ ansible_devices['sdc']['size'] | default('none') }}
